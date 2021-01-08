@@ -14,6 +14,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 from pathlib import Path
+from json import dump, loads
 
 # -- Project information -----------------------------------------------------
 
