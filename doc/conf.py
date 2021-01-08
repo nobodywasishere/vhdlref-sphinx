@@ -52,7 +52,7 @@ html_theme = 'alabaster'
 html_static_path = ['_static']
 
 html_context = {}
-ctx = 'context.json'
+ctx = Path(__file__).resolve().parent / 'context.json'
 if ctx.is_file():
     html_context.update(loads(ctx.open('r').read()))
 
